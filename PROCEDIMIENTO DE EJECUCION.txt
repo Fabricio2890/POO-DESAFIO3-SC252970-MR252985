@@ -1,0 +1,26 @@
+PASO 1 :
+-Iniciar el Servidor Local (Wampp,Xampp,Laragon,etc)
+-Importar la Base de Datos
+
+PASO 2:
+-Abrir el proyecto en IntelliJ IDEA 
+-Configurar el Smart Tomcat
+-En la barra de herramientas nos vamos a Run > Editar Configuraciones
+-En el recuadro buscamos el + y agregamos el Smart Tomcat, dentro de los la carpeta incluye la versión Smart Tomcat que estamos utilizando para el proyecto
+
+PASO 3
+-Configuramos el Smart Tomcat para que funcione con el proyecto con los siguientes parámetros:
+
+Tomcat Server: Apache Tomcat/10.1.55
+Catalina base: SmartTomcat\biblioteca-udb\biblioteca-udb
+Deployement directory: biblioteca-udb\src\main\webapp
+use classpath of module: biblioteca-udb
+Context path: bibloteca-udb
+Server port: 8080
+Admin port: 8005
+
+Le damos en aplicar y podremos correr el archivo, si todo esta correcto nos dará la siguiente dirección
+
+http://localhost:8080/bibloteca-udb
+
+Asi ya estaremos ejecutando el sistema
